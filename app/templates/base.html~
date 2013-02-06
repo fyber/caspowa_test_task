@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <div id="body">
+      <ul>
+        {% block body %}
+        {% for item in items %}
+          <li>{{ item['key'] }} - <img src="{{ item['image'] }}"></li>
+        {% endfor %}
+        {% endblock %}
+      </ul>
+    </div>
+  </body>
+</html>

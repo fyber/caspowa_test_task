@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <ul>
+    {% for item in items %}
+      <li>{{ item['key'] }} - <img src="{{ item['image'] }}"></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
